@@ -203,6 +203,10 @@ hr.light-100 {
     font-size: 90%;
     padding: 4px 8px;
   }
+  
+  .carousel-indicators {
+    display: none;
+  }
 
   .display-4 {
     font-size: 160%;
