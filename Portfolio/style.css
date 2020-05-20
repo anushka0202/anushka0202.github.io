@@ -185,3 +185,36 @@ hr.light-100 {
     padding: 0.7rem;
   }
 }
+
+@media (max-width: 340px) {
+  .carousel-caption {
+    top: 40%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 200%;
+  }
+
+  .carousel-caption h5 {
+    font-size: 100%;
+  }
+
+  .carousel-caption .btn {
+    font-size: 90%;
+    padding: 4px 8px;
+  }
+
+  .display-4 {
+    font-size: 160%;
+  }
+
+  .social a {
+    font-size: 2em;
+    padding: 0.7rem;
+  }
+
+  .logo {
+    width: 10%;
+  }
+}
+
