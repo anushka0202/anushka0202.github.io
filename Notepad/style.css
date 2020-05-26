@@ -9,8 +9,11 @@ body {
   color: #222222;
 }
 
-.card-body {
+.card {
   margin: 4px;
+}
+
+.card-body {
   background: #d3d3d3;
   border: none;
 }
