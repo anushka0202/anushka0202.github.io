@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notepad</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><i class="fas fa-pen-square"></i>Notepad</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br />
+
+    <!--Two column section-->
+    <div class="container-fluid padding">
+      <div class="row padding">
+        <div class="col-lg-5">
+          <h2>My notes</h2>
+          <br />
+          <h5 id="msg" class="msg" >Notes you add appear here</h5>
+          <ul id="myNotes"></ul>
+        </div>
+        <div class="col-lg-7">
+          <h2>Add a note!</h2>
+          <br />
+          <form id="my-form" class="my-form">
+            <div id="title" class="form-group">
+              <label>Title:</label>
+              <input id="myInput" type="text" name="title" />
+            </div>
+            <div id="note" class="form-group">
+              <label>Note :</label>
+              <textarea id="myText" name="note"></textarea>
+            </div>
+          </form>
+          <button onclick="add()" type="button" class="button">
+            Add note
+          </button>
+          <button onclick="document.getElementById('myInput').value = ''" type="button" class="button">
+            Clear Title
+          </button>
+          <button onclick="document.getElementById('myText').value = ''" type="button" class="button">
+            Clear Note
+          </button>
+          <br />
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <!--Footer-->
+    <footer>
+
+          <div class="col-12">
+            <hr class="light-100" />
+            <h5 >&copy; 2020 Anushka</h5>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
