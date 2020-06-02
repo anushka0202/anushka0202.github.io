@@ -1,8 +1,3 @@
-//var search = document.getElementById('searchButton');
-//search.onclick = function () {
-//  weatherSearch();
-//};
-
 function weatherSearch() {
   var city = document.getElementById('searchText').value;
 
@@ -22,7 +17,7 @@ function weatherSearch() {
     .get(
       'http://api.openweathermap.org/data/2.5/weather?q=' +
         city +
-        '&units=Imperial&APPID=33097b60432e0aeb705db4086da24fbb'
+        '&units=Metric&APPID=33097b60432e0aeb705db4086da24fbb'
     )
     .then((res) => {
       console.log(res);
