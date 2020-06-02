@@ -1,17 +1,11 @@
+var city = document.getElementById('searchText').value;
+
+var image = document.createElement('img');
+image.setAttribute('id', 'icon');
+document.getElementById('weather-container').appendChild(image);
+
 function weatherSearch() {
-  var city = document.getElementById('searchText').value;
-
-  var image = document.createElement('img');
-  image.setAttribute('id', 'icon');
-  document.getElementById('weather-container').appendChild(image);
-
-  var getWeather = document.createElement('p');
-  getWeather.setAttribute('id', 'weather');
-  document.getElementById('weather-container').appendChild(getWeather);
-
-  var getTemp = document.createElement('p');
-  getTemp.setAttribute('id', 'temp');
-  document.getElementById('weather-container').appendChild(getTemp);
+  document.getElementById('city').innerHTML = city;
 
   axios
     .get(
@@ -35,3 +29,4 @@ function weatherSearch() {
     })
     .catch((err) => console.log(err));
 }
+
