@@ -72,12 +72,12 @@ body {
   color: #3b5998;
 }
 
-.fa-twitter {
-  color: #00aced;
+.fa-linkedin {
+  color: #0e76a8;
 }
 
-.fa-google-plus {
-  color: #dd4b39;
+.fa-github {
+  color: #f1502f;
 }
 
 .fa-instagram {
@@ -89,8 +89,8 @@ body {
 }
 
 .fa-facebook:hover,
-.fa-twitter:hover,
-.fa-google-plus:hover,
+.fa-linkedin:hover,
+.fa-github:hover,
 .fa-instagram:hover,
 .fa-youtube:hover {
   color: #d5d5d5;
