@@ -56,6 +56,7 @@ gives this
 ```
 
 ## POST
+### To create a note
 request: `POST`
 `
 http://localhost:3000/notes
@@ -88,6 +89,7 @@ give this
 ```
 
 ## PATCH
+### To update/edit a note by ID
 request: `PATCH`
 `
 http://localhost:3000/notes/noteId
@@ -116,6 +118,7 @@ give this
 ```
 
 ## DELETE
+### To delete a note by ID
 request: `DELETE`
 `
 http://localhost:3000/notes/noteId
